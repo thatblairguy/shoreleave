@@ -1,0 +1,24 @@
+Custom Bootstrap options
+
+Common CSS
+----------
+Grid System
+Forms
+Responsive Utilities
+
+Components
+----------
+Navs
+Navbar
+
+JavaScript Components
+---------------------
+Component animations (for JS)
+
+jQuery plugins
+--------------
+Collapse
+Transitions
+
+
+https://getbootstrap.com/customize/?id=3990763e7b897f1c1b2e9985348f6373

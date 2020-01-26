@@ -1,0 +1,578 @@
+﻿/* Color for screen-only. */
+@media screen {
+	a
+	{
+		color: #FC0;
+		text-decoration: underline;
+	}
+}
+
+body {
+	background: #000 url("background.jpg") no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	color: #dddddd;
+}
+
+img {
+	border: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+img.right {
+    float: right;
+    margin: 5px 0 5px 5px;
+}
+
+img.left {
+    float: left;
+    margin: 5px 0 5px 5px;
+}
+
+input[type=image] {
+    border: none;
+}
+
+button, input, optgroup,
+select, textarea {
+	color: black;
+	font-weight: normal;
+	line-height: normal;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+	font-family: Sans-Serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #3D6096;
+}
+
+h1.center,h2.center,h3.center,h4.center,h5.center,h6.center,h7.center {
+    text-align: center;
+    clear: both;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.133em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.67em; }
+
+h2.alert,
+h2.alert a,
+h2.alert a:link, h2.alert a:visited,
+h2.alert a:hover, h2.alert a:active {
+	font-variant: small-caps;
+	color: #990000;
+}
+
+hr.divider {
+	width: 50%;
+	margin: 15px auto 15px auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.emphasis {
+	font-style: oblique;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+del,
+.strikeout {
+    text-decoration: line-through;
+}
+
+del {
+    display: inline;
+}
+
+.inset {
+	margin-left: 2em;
+	border:none;
+}
+
+/* Right Info Box */
+div.right-info-box {
+	float:right;
+	background-color: #000000;
+	border: double 5px #0047AB;
+	margin: 10px 0px 10px 10px;
+	padding: 5px;
+	max-width: 320px;
+}
+div.right-info-box h4 {
+	text-align: center;
+	margin: 0;
+}
+div.right-info-box p.short {
+	text-align: center;
+}
+/* Right Info Box */
+
+/* Info Box */
+div.info-box {
+	border: double 5px #0047AB;
+	margin: 10px 0px 10px 10px;
+	padding: 5px;
+}
+
+.left { float: left; }
+
+.right { float: right; }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contents {
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,.75);
+}
+
+/* List without bullet points */
+#contents ul.no-bullets li {
+    list-style: none;
+    margin: 5px 0 5px 0;
+}
+/* List without bullet points */
+
+#contents ul.vertical-space li,
+#contents ol.vertical-space li
+{
+    margin: 10px 0 10px 0;
+}
+
+#contents ul.compact li,
+#contents ol.compact li {
+    margin: 3px 0 3px 0;
+}
+
+#contents ul.horizontal-list {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0 auto;
+   padding:0;
+   position:relative;
+   text-align:center;
+   width:"100%";
+}
+
+#contents ul.horizontal-list li {
+   display:block;
+   float:left;
+   list-style:none;
+   border: none;
+   margin:0 10px 0 10px;
+   padding:0;
+   position:relative;
+}
+
+/* Header */
+#header {
+	border: solid 1px Transparent;
+	height: 146px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 145px;
+}
+
+#header div.header_logo {
+	background: transparent url("../layout/header_logo.png") no-repeat;
+	border: none;
+	float: left;
+	margin-left: -145px;
+	width: 145px;
+	height: 146px;
+}
+
+table.schedule-grid {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border: solid 1px #000000;
+	padding: 4px;
+}
+
+table.schedule-grid td {
+	border: solid 1px #000000;
+	padding: 10px;
+}
+
+table.schedule-grid th.title {
+	text-align: center;
+	font-size: 18pt;
+}
+
+table.schedule-grid td.time-slot {
+	width: 125px;
+	text-align: right;
+}
+
+table.schedule-grid td.speaker {
+	font-weight: bold;
+}
+
+
+table.schedule-grid tr.date-row td {
+	font-weight: bold;
+	padding-top: 20px
+}
+
+/* Announcement box */
+.announce {
+	background-color: #FFFFFF;
+	color: #000;
+	border: groove 8px #0033FF;
+	margin: 5px auto 5px auto;
+	padding: 5px 10px;
+	width: 100%;
+}
+.announce p {
+	color: #000;
+	font-size: 14px;
+	font-family: Sans-Serif;
+	margin: 10px 0px 10px 0px;
+	text-align: justify;
+}
+.announce p.quote {
+	text-align: center;
+}
+.announce p.quote .citation {
+	font-family: Serif;
+	font-style: oblique;
+}
+/* End announcement box */
+
+/* Tabs */
+
+#tabmenu, .tabmenu {
+   width:100%;
+   background:#B87333;
+   border-bottom:1px solid #000;
+   border-radius: 10px;
+   padding-left: 10px;
+   overflow:hidden;
+   position:relative;
+   margin-bottom: 10px;
+}
+#tabmenu ul, .tabmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   text-align:center;
+}
+#tabmenu ul li, .tabmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   border: solid 1px #333333;
+   border-top: none;
+   margin:0;
+   padding:0;
+   position:relative;
+}
+#tabmenu ul li a,
+#tabmenu ul li a:link,
+#tabmenu ul li a:visited,
+.tabmenu ul li a,
+.tabmenu ul li a:link,
+.tabmenu ul li a:visited {
+   display:block;
+   margin:0;
+   padding:3px 10px;
+   color:#000000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+
+#tabmenu ul li a:hover,
+#tabmenu ul li a:focus,
+.tabmenu ul li a:hover,
+.tabmenu ul li a:focus {
+	color: #ffffff;
+}
+.secondary-tab {
+    background-color: #c0a000;
+}
+#tabmenu ul li a:active,
+.tabmenu ul li a:active {
+	color: #ffffff;
+	background-color: #000000;
+}
+/*
+This style is included in active-tab.txt where it
+is used with a server-side include and a tab ID
+to mark the current tab
+#tabmenu ul li a.active {
+   color:#ffffff;
+   background:#000000;
+   font-weight:bold;
+}*/
+/* End Tabs */
+
+/* Unordered list without the bullets */
+#contents ul.unbulleted li {
+    list-style: none;
+    margin: 5px 0px 5px 0px;
+}
+#contents ul.unbulleted li.question {
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 15px;
+}
+#contents ul.unbulleted li.answer {
+    margin-bottom: 15px;
+}
+
+div.center {
+    text-align:center;
+}
+
+/* Display banner for screen & print media only. Let the text "display" in other media. */
+@media screen, print
+{
+	#header {
+		margin: 5px auto 0px auto;
+		background: transparent url("../layout/header-banner.png") no-repeat left;
+		border: none;
+		height: 250px;
+	}
+
+	#header p  {
+		display: none;
+	}
+}
+
+/* End Header */
+
+
+/* Begin Content Area */
+#contents {
+    float: right;
+}
+
+/* No left margin when printing */
+@media print
+{
+	#contents {
+		margin-left: 0px;
+		width: auto;
+		position: inherit;
+		top: inherit;
+		left: inherit;
+		right: inherit;
+	}
+}
+
+#contents h1 {
+	margin-top: 0px;
+}
+
+#contents ul.spaced-list li,
+#contents ol.spaced-list li {
+	margin: 8px 0px 8px 0px;
+}
+
+#contents div.bioPhoto {
+	float:right;
+	padding: 5px 0px 5px 5px;
+}
+
+#contents div.bioPhotoInner {
+	padding: 3px 0px 3px 3px;
+}
+
+#contents div.bibliography {
+	clear: both;
+}
+
+#contents div.bibliography td {
+    padding: 3px 5px 3px 5px;
+}
+
+#contents .guest-name {
+	font-size: large;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+
+#contents ul.guest-weblinks li {
+	list-style-type: none;
+}
+
+
+/*
+	All thumbnail images are 130 x 160.
+	This should never go in the HTML.
+*/
+
+#contents .guest-group {
+    float:left;
+    max-width:650px;
+}
+
+#contents .guest-group .sub-group {
+    float:left;
+    max-width:320px;
+}
+
+
+/* Thumbnails for general guests */
+#contents .general-thumbnail {
+	margin: 5px 8px 5px 8px;
+	float: left;
+	height: 210px;
+	width: 150px;
+}
+#contents .general-thumbnail img {
+	height: 160px;
+	width: 130px;
+}
+
+#contents .copyright {
+	font-size: x-small;
+}
+
+
+#contents .footnote {
+    font-size: smaller;
+}
+
+#contents .half-box {
+    width: 45%;
+    min-width: 300px;
+    margin: 0 10px 0 10px;
+}
+
+#contents .third-box {
+    float: left;
+    width: 30%;
+    margin: 0 5px 0 5px;
+}
+
+#contents .clear {
+	clear: both;
+}
+
+.callout {
+	border: solid 1px #0047AB;
+	padding: 5px;
+}
+
+.callout .title {
+	text-align:center;
+	font-weight:bold;
+	font-size: large;
+}
+
+.callout p {
+	margin: 7px;
+}
+
+.memorial {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.memorial h4 {
+	margin: 0;
+}
+.memorial img {
+	border: none;
+	margin: 0px 10px 0px 0px;
+	float: left;
+	width: 140px;
+}
+
+/* End Content Area */
+
+/* Begin Collapsible Navigation Bar */
+
+.navbar-brand > img {
+	height: 50px;
+	transform: translateY(-30%);
+}
+
+/* End Collapsible Navigation Bar */
+
+/* Begin Navigation Bar */
+#navbar {
+	font-family: helvetica, arial, Sans-Serif;
+	font-size: 12px;
+}
+
+#navbar p {
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 145px;
+	height: 23px;
+	text-align: center;
+}
+
+#navbar a {
+	font-weight: bold;
+	text-decoration: none;
+	padding: 4px 2px 4px 2px;
+}
+
+#navbar a:link,
+#navbar a:visited {
+	/*color: #ffff00;*/
+}
+
+#navbar a:hover,
+#navbar a:active,
+#navbar a:focus
+{
+	color: #ff3300;
+}
+/* End Navigation Bar */
+
+/* Begin Footer */
+/* End Footer */
+
+/* Miscellany -- don't add too many of these! */
+.alert {
+	color: #cc0000;
+}
+
+.change {
+	color: rgb(123, 255, 0);
+}
+
+.deleted {
+	text-decoration: line-through;
+}
+
+.charity {
+    font-weight: bold;
+}
+
+
+/* End Miscellany */
+
+
+/* Turn off headers and navabar for printing. */
+@media print
+{
+	#header, #navbar {
+		display: none;
+		height: 0px;
+	}
+
+	#contents {
+		top: 0;
+	}
+}
