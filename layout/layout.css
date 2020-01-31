@@ -560,6 +560,11 @@ div.center {
     font-weight: bold;
 }
 
+.box {
+	float: left;
+	width: 20em;
+	height: 320px;
+}
 
 /* End Miscellany */
 

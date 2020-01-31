@@ -35,6 +35,12 @@
 	<link rel="me" type="text/html" href="https://facebook.com/ShoreLeaveCon"/> 
 	<!-- END   "/layout/metaheaders.htm" -->
 
+	<?php
+		echo page_meta_description();
+		echo page_twitter_description();
+		echo page_og_description();
+	?>
+
 	<link rel="canonical" href="<?php echo get_permalink() ?>" />
 
 </head>
@@ -59,8 +65,8 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="/">Home</a></li>
 					<!-- <li><a href="/programming/schedule.htm">Schedule</a></li> -->
-					<li><a href="/info/news.htm">News</a></li>
-					<li><a href="/info/faq.htm">FAQ</a></li>
+					<li><a href="/info/news/">News</a></li>
+					<li><a href="/info/faq/">FAQ</a></li>
 					<li><a href="/registration/">Registration</a></li>
 					<li><a href="/guests/">Guests</a></li>
 					<!-- <li><a href="/emporium/">Emporium</a></li> -->
@@ -91,8 +97,8 @@
 	<!-- BEGIN "/layout/navbar.php" -->
 	<div id="navbar" class="hidden-xs col-sm-2">
 		<p><a href="/">Home</a></p>
-		<p><a href="/info/news.htm">News</a></p>
-		<p><a href="/info/faq.htm">FAQ</a></p>
+		<p><a href="/info/news/">News</a></p>
+		<p><a href="/info/faq/">FAQ</a></p>
 		<p><a href="/registration/">Registration</a></p>
 		<p><a href="/guests/">Guests</a></p>
 		<p><a href="/vendors/">Vendors</a></p>
@@ -117,4 +123,4 @@
 	<div id="contents" class="container-fluid col-sm-10">
 
 		<!-- tab bar goes here somehow. -->
-		<?php the_title('<h1>', '</h1>') ?>
+		<?php get_section_menubar() ?>
