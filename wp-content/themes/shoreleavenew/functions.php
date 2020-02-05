@@ -16,22 +16,57 @@ function load_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
+/**
+ * Find the current section name by parsing the current page URL and pulling out the
+ * first segment of the path.
+ */
+$menuMap = array(
+	'charity' => 'charityMenu',
+	'contacts' => 'contactsMenu',
+	'guests' => 'guestMenu',
+	'info' => 'infoMenu',
+	'location' => 'locationMenu',
+	'masquerade' => 'masqueradeMenu',
+	'programming' => 'programmingMenu',
+	'registration' => 'registrationMenu',
+	'vendors' => 'vendorMenu',
+);
+
+function get_section_name($pageUrl) {
+	$sectionName = NULL;
+	if($pageUrl) {
+		$path = parse_url($pageUrl, PHP_URL_PATH);
+		$sectionName = strtok($path, '/');
+	}
+	return $sectionName;
+}
 
 function get_section_menubar() {
 
+	global $menuMap;
+
+	// Find the current section.
+	$currSection = get_section_name(get_permalink());
 	$menuLocations = get_nav_menu_locations();
-	$menu = wp_get_nav_menu_object( $menuLocations['infoMenu']);
 
-	$menuArr = wp_get_nav_menu_items($menu);
+	if( array_key_exists($currSection, $menuMap) ) {
 
-	if($menuArr) {
+		$menuName = $menuMap[$currSection];
 
-		echo '<div id="tabmenu"><ul>';
-		foreach( (array) $menuArr as $menuEntry) {
-			echo '<li><a href="' . $menuEntry->url . '">' . $menuEntry->title . '</a></li>';
+		$menu = wp_get_nav_menu_object( $menuLocations[$menuName]);
+
+		$menuArr = wp_get_nav_menu_items($menu);
+
+		if($menuArr) {
+
+			echo '<div id="tabmenu"><ul>';
+			foreach( (array) $menuArr as $menuEntry) {
+				echo '<li><a href="' . $menuEntry->url . '">' . $menuEntry->title . '</a></li>';
+			}
+			echo '</ul></div>';
 		}
-		echo '</ul></div>';
 	}
+
 }
 
 /**
